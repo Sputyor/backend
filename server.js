@@ -22,6 +22,7 @@ app.use(cookieParser());
 
 app.use(session({
     secret: 'asd123123',
+    name:'süti',
     resave: true,
     saveUninitialized: true,
     cookie: {maxAge:600000, httpOnly:false, secure: true, sameSite:'none'}
