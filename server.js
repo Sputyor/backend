@@ -6,9 +6,8 @@ const cookieParser = require('cookie-parser');
 
 
 const corsOptions = {
-    origin:["https://main--visionary-croquembouche-50b9b6.netlify.app", "https://sore-blue-elephant-toga.cyclic.app", "http://localhost:5173","http://192.168.1.122:5173"],
+    origin:["https://sore-blue-elephant-toga.cyclic.app", "https://main--visionary-croquembouche-50b9b6.netlify.app"] ,
     credentials: true,
-    
 }
 
 
@@ -25,7 +24,6 @@ app.use(session({
     secret: 'asd123123',
     resave: true,
     saveUninitialized: true,
-    cookie:{maxAge:60000, sameSite:"none",secure:true, domain:"main--visionary-croquembouche-50b9b6.netlify.app" }
 }));
 
 app.get('/',(req,res)=>{
