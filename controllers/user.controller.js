@@ -89,6 +89,8 @@ const users = {
                     username: user.username,
                     role: user.role,
                 };
+                req.session.cookie.sameSite = 'none';
+                req.session.cookie.secure = true;
                 req.session.save();
                 res.send({ 
                     message: 'Logged in successfully',
