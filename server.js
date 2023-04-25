@@ -24,7 +24,7 @@ app.use(session({
     secret: 'asd123123',
     resave: true,
     saveUninitialized: true,
-    cookie: {sameSite:"none", secure:true}
+    cookie: {sameSite:"lax", secure:true}
 }));
 
 app.get('/',(req,res)=>{
