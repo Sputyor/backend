@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 
 
 const corsOptions = {
-    origin:["https://main--visionary-croquembouche-50b9b6.netlify.app", "https://sore-blue-elephant-toga.cyclic.app"],
+    origin:["https://main--visionary-croquembouche-50b9b6.netlify.app", "https://sore-blue-elephant-toga.cyclic.app", "http://localhost:5173","http://192.168.1.122:5173"],
     credentials: true,
     
 }
