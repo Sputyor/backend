@@ -90,6 +90,7 @@ const users = {
                     role: user.role,
                 };
                 req.session.save();
+                res.cookie(req.session.cookie)
                 res.send({ 
                     message: 'Logged in successfully',
                     user: user,
