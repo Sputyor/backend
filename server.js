@@ -25,7 +25,7 @@ app.use(session({
     secret: 'asd123123',
     resave: true,
     saveUninitialized: true,
-    cookie:{maxAge:60000, sameSite:"none",secure:true }
+    cookie:{maxAge:60000, sameSite:"none",secure:true, domain:"main--visionary-croquembouche-50b9b6.netlify.app" }
 }));
 
 app.get('/',(req,res)=>{
