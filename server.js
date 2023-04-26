@@ -25,7 +25,7 @@ app.use(session({
     name:'süti',
     resave: true,
     saveUninitialized: true,
-    cookie: {maxAge:600000, secure: true, sameSite:'none'}
+    cookie: {sameSite:'none',secure: true, }
 }));
 
 app.get('/',(req,res)=>{
