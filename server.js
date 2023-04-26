@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 
 
 const corsOptions = {
-    origin:'*' ,
+    origin:['https://sore-blue-elephant-toga.cyclic.app', 'https://visionary-roquembouche-50b9b6.netlify.app'] ,
     credentials: true,
 }
 
@@ -25,7 +25,7 @@ app.use(session({
     name:'süti',
     resave: true,
     saveUninitialized: true,
-    cookie: {maxAge:600000, httpOnly:false, secure: true, sameSite:'none'}
+    cookie: {maxAge:600000, secure: true, sameSite:'none'}
 }));
 
 app.get('/',(req,res)=>{
